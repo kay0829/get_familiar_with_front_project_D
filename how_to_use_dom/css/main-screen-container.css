@@ -1,0 +1,52 @@
+/* main container */
+.container {
+    width: 100%;
+    height: calc(100vh - 35px);
+    background-image: url("../assets/main-background.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.main-screen-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 80px);
+    grid-template-rows: repeat(auto-fill, 70px);
+    gap: 32px 1px;
+    height: 100%;
+    padding: 5px 5px;
+}
+
+/* icon */
+.default-icon {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: min-content;
+    padding: 2px;
+}
+
+.default-icon:hover {
+    border: 1px solid #86BEDA;
+    background-color: #86BEDA;
+}
+
+.default-icon.clicked {
+    border: 1px solid #3E77B6;
+    background-color: #3E77B6;
+}
+
+.default-icon > button > figure {
+    display: inline-block;
+    width: 48px;
+    height: 48px;
+}
+
+.default-icon > button > figure > img {
+    width: 48px;
+    height: 48px;
+}
+
+.default-icon > button > figcaption {
+    font-size: 13px;
+}
