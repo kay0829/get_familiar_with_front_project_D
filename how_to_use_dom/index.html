@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/main-screen-container.css">
+    <link rel="stylesheet" href="./css/user-auth-modal.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <section class="main-screen-container">
+            <li
+                id="icon-1"
+                class="default-icon"
+                draggable="true"
+                style="grid-column-start: 1;grid-row-start: 1;"
+            >
+                <button>
+                    <figure>
+                        <img src="./assets/icon-internet.png" alt="">
+                    </figure>
+                    <figcaption>
+                        인터넷 익스플로러
+                    </figcaption>
+                </button>
+            </li>
+        </section>
+    </div>
+    <section class="user-auth-modal">
+        <div class="user-auth-modal__main">
+            <div class="user-auth-modal__main__logo-container">
+                <div>
+                    <img src="./assets/window-xp-logo.png" alt="">
+                </div>
+                <span>시작하려면 사용자를 생성하십시오.</span>
+            </div>
+            <div class="user-auth-modal__main__input-container">
+                <div>
+                    <div style="display: flex;margin: 8px;">
+                        <label class="user-auth-modal__main__input-label" for="userAuthName">사용자명</label>
+                        <input class="user-auth-modal__main__input" type="text" id="userAuthName" />
+                    </div>
+                    <span class="guide-msg">* 사용자명은 2자 이상 10자 미만이어야 합니다.</span>
+                </div>
+                <div>
+                    <div style="display: flex;margin: 8px;">
+                        <label class="user-auth-modal__main__input-label" for="userAuthPw">비밀번호</label>
+                        <input class="user-auth-modal__main__input" type="text" id="userAuthPw" />
+                    </div>
+                    <span class="guide-msg">* 비밀번호는 8자 이상 16자 미만이며, 영어 대소문자만 사용 합니다.</span>
+                </div>
+                <div>
+                    <div style="display: flex;margin: 8px;">
+                        <label class="user-auth-modal__main__input-label">이미지</label>
+                        <label for="userAuthImage" class="user-auth-modal__main__file-label">이미지 업로드</label>
+                        <input class="" type="file" id="userAuthImage" />
+                    </div>
+                    <span class="guide-msg">* 이미지를 등록하지 않을 경우 기본 이미지로 등록됩니다.</span>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="./js/index.js"></script>
+</body>
+</html>
