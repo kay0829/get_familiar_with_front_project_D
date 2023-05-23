@@ -68,8 +68,9 @@ li {
 
 .guide-msg {
     margin-left: 18px;
+    margin-bottom: 18px;
     font-size: 14px;
-    color: #ffffff;
+    color: #B3CADE;
 }
 
 .vanish-style {
@@ -79,4 +80,14 @@ li {
     padding: 0;
     overflow: hidden;
     border: 0;
+}
+
+.hide {
+    display: none;
+}
+
+.center {
+    display: flex;
+    justify-content:center;
+    align-items:center;
 }
