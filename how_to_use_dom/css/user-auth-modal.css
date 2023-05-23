@@ -15,7 +15,7 @@
     display: flex;
     flex-direction: column;
     width: 100%;
-    height: 60%;
+    height: 80%;
     z-index: 101;
     background-color: #5B7EDC;
     border-top: 1px solid #ffffff;
@@ -29,7 +29,7 @@
     align-items: flex-end;
     width: 100%;
     height: 30%;
-    padding: 0 300px;
+    padding: 0 200px;
 }
 
 .user-auth-modal__main__logo-container > div {
@@ -74,6 +74,11 @@
     display: flex;
     justify-content: space-between;
     height: 50px;
+}
+
+.user-auth-modal__main__input__prev-btn,
+.user-auth-modal__main__input__next-btn {
+    cursor: pointer;
 }
 
 .user-auth-modal__main__input-label {
