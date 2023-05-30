@@ -47,10 +47,25 @@
     color: #ffffff;
 }
 
+.user-auth-modal__main__input {
+    width: 250px;
+    height: 45px;
+    background-color: #ffffff;
+    border-radius: 4px;
+    box-shadow: 1px 1px 5px rgba(68, 68, 68, 0.41);
+    font-size: 18px;
+}
+
+.user-auth-modal__main__input-icon {
+    position: absolute;
+    top: 7px;
+    right: 10px;
+}
+
 .user-auth-modal__main__input-box {
     width: 450px;
     height: 400px;
-    overflow: hidden;
+    /* overflow: hidden; */
 }
 
 .user-auth-modal__main__input-container {
@@ -91,15 +106,6 @@
     color: #B3CADE;
 }
 
-.user-auth-modal__main__input {
-    width: 250px;
-    height: 45px;
-    background-color: #ffffff;
-    border-radius: 4px;
-    box-shadow: 1px 1px 5px rgba(68, 68, 68, 0.41);
-    font-size: 18px;
-}
-
 .user-auth-modal__main__file-preview {
     width: 100%;
     height: 200px;
@@ -119,4 +125,12 @@
     background-color: #5B7EDC;
     border-radius: 4px;
     cursor: pointer;
+}
+
+.user-auth-modal__main__file-label {
+    padding: 8px;
+    /* background-color: #B3CADE; */
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 4px;
 }
