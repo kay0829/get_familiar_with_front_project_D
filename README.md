@@ -4,6 +4,9 @@
 ## 프로젝트 개요
 PC 프로그램을 간단학게 구현하며 다양한 개념을 적용해보고자 함
 
+## 프로젝트 진행 과정
+- 링크: [구글 드라이브 "코드스테이츠_프로젝트"](https://drive.google.com/drive/u/0/folders/17A8jsNXEYYWcnvXVY9PCQeDGMQKV8cMh)
+
 ## 상위 폴더 의미
 - how_to_use_dom: DOM 을 활용하여 만든 프로젝트
 - how_to_use_react_function: React의 함수형 컴포넌트 를 사용하여 만든 프로젝트
