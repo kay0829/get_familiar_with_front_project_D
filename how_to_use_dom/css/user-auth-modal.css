@@ -65,7 +65,7 @@
 .user-auth-modal__main__input-box {
     width: 450px;
     height: 400px;
-    /* overflow: hidden; */
+    overflow: hidden;
 }
 
 .user-auth-modal__main__input-container {
@@ -119,9 +119,11 @@
     object-fit: contain;
 }
 
+.user-auth-modal__main__login-button,
 .user-auth-modal__main__submit-button {
     width: 150px;
     height: 40px;
+    margin-top: 8px;
     background-color: #5B7EDC;
     border-radius: 4px;
     cursor: pointer;
@@ -133,4 +135,9 @@
     background-color: #ffffff;
     border: 1px solid #ddd;
     border-radius: 4px;
+}
+
+.user-auth-modal__main__locate_login_btn {
+    color: #092d80;
+    text-decoration: underline #092d80 !important;
 }
