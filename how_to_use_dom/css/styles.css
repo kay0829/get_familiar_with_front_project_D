@@ -74,6 +74,14 @@ li {
   color: #b3cade;
 }
 
+.guide-password-msg {
+  display: none;
+  margin-left: 18px;
+  margin-bottom: 18px;
+  font-size: 14px;
+  color: #b3cade;
+}
+
 .vanish-style {
   position: absolute;
   width: 0;
