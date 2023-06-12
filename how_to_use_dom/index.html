@@ -1,153 +1,318 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/styles.css">
-    <link rel="stylesheet" href="./css/main-screen-container.css">
-    <link rel="stylesheet" href="./css/user-auth-modal.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/main-screen-container.css" />
+    <link rel="stylesheet" href="./css/user-auth-modal.css" />
     <title>Document</title>
-</head>
-<body>
+  </head>
+  <body>
     <div class="container">
-        <section class="main-screen-container">
-            <li
-                id="icon-1"
-                class="default-icon"
-                draggable="true"
-                style="grid-column-start: 1;grid-row-start: 1;"
-            >
-                <button>
-                    <figure>
-                        <img src="./assets/icon-internet.png" alt="" draggable="false">
-                    </figure>
-                    <figcaption>
-                        인터넷 익스플로러
-                    </figcaption>
-                </button>
-            </li>
-        </section>
+      <section class="main-screen-container">
+        <li
+          id="icon-1"
+          class="default-icon"
+          draggable="true"
+          style="grid-column-start: 1; grid-row-start: 1"
+        >
+          <button>
+            <figure>
+              <img src="./assets/icon-internet.png" alt="" draggable="false" />
+            </figure>
+            <figcaption>인터넷 익스플로러</figcaption>
+          </button>
+        </li>
+      </section>
     </div>
     <section class="user-auth-modal">
-        <div class="user-auth-modal__main">
-            <div class="user-auth-modal__main__logo-container">
-                <div>
-                    <img src="./assets/window-xp-logo.png" alt="">
-                </div>
-                <span>시작하려면 사용자를 생성하십시오.</span>
-            </div>
-            <div class="center" style="flex-direction: column;width: 100%;">
-                <div class="user-auth-modal__main__input-box">
-                    <div class="user-auth-modal__main__input-container">
-                        <div class="user-auth-modal__main__input-container__item">
-                            <div class="user-auth-modal__main__input-container__item-top">
-                                <div class="center" style="width: 100px;"></div>
-                                <span class="user-auth-modal__main__input-label" style="width: 150px;">계정 정보</span>
-                                <div class="center" style="width: 100px;">
-                                    <button class="user-auth-modal__main__input__next-btn">
-                                        <svg style="width:30px;fill: rgb(255,255,255)"xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><title>chevron-right</title><path d="M8.59,16.58L13.17,12L8.59,7.41L10,6L16,12L10,18L8.59,16.58Z" /></svg>
-                                    </button>
-                                </div>
-                            </div>
-                            <div class="center" style="flex-direction: column;height: calc(100% - 50px);">
-                                <div style="display: flex;margin: 16px;">
-                                    <label class="user-auth-modal__main__input-label" for="userAuthName">사용자명</label>
-                                    <input class="user-auth-modal__main__input" type="text" id="userAuthName" />
-                                </div>
-                                <span class="guide-msg">* 사용자명은 2자 이상 10자 이하이어야 합니다.</span>
-                                <div style="display: flex;margin: 16px;">
-                                    <label class="user-auth-modal__main__input-label" for="userAuthPw">비밀번호</label>
-                                    <div style="position: relative;">
-                                        <input class="user-auth-modal__main__input" type="password" id="userAuthPw" />
-                                        <button class="user-auth-modal__main__input-icon">
-                                            <svg style="width: 30px;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><title>eye-off-outline</title><path d="M2,5.27L3.28,4L20,20.72L18.73,22L15.65,18.92C14.5,19.3 13.28,19.5 12,19.5C7,19.5 2.73,16.39 1,12C1.69,10.24 2.79,8.69 4.19,7.46L2,5.27M12,9A3,3 0 0,1 15,12C15,12.35 14.94,12.69 14.83,13L11,9.17C11.31,9.06 11.65,9 12,9M12,4.5C17,4.5 21.27,7.61 23,12C22.18,14.08 20.79,15.88 19,17.19L17.58,15.76C18.94,14.82 20.06,13.54 20.82,12C19.17,8.64 15.76,6.5 12,6.5C10.91,6.5 9.84,6.68 8.84,7L7.3,5.47C8.74,4.85 10.33,4.5 12,4.5M3.18,12C4.83,15.36 8.24,17.5 12,17.5C12.69,17.5 13.37,17.43 14,17.29L11.72,15C10.29,14.85 9.15,13.71 9,12.28L5.6,8.87C4.61,9.72 3.78,10.78 3.18,12Z" /></svg>
-                                        </button>
-                                    </div>
-                                </div>
-                                <span class="guide-msg">* 비밀번호는 8자 이상 16자이하, 영어 대소문자와 숫자를 사용합니다.</span>
-                            </div>
-                        </div>
-                        <div class="user-auth-modal__main__input-container__item">
-                            <div class="user-auth-modal__main__input-container__item-top">
-                                <div class="center" style="width: 100px;">
-                                    <button class="user-auth-modal__main__input__prev-btn">
-                                        <svg  style="width:30px;fill: rgb(255,255,255)" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><title>chevron-left</title><path d="M15.41,16.58L10.83,12L15.41,7.41L14,6L8,12L14,18L15.41,16.58Z" /></svg>
-                                    </button>
-                                </div>
-                                <span class="user-auth-modal__main__input-label" style="width: 150px;">비밀번호 재확인</span>
-                                <div class="center" style="width: 100px;">
-                                    <button class="user-auth-modal__main__input__next-btn">
-                                        <svg style="width:30px;fill: rgb(255,255,255)"xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><title>chevron-right</title><path d="M8.59,16.58L13.17,12L8.59,7.41L10,6L16,12L10,18L8.59,16.58Z" /></svg>
-                                    </button>
-                                </div>
-                            </div>
-                            <div class="center" style="flex-direction: column;height: calc(100% - 50px);">
-                                <div style="display: flex;margin: 16px;">
-                                    <label class="user-auth-modal__main__input-label" for="userAuthPwRe">비밀번호</label>
-                                    <div style="position: relative;">
-                                        <input class="user-auth-modal__main__input" type="password" id="userAuthPwRe" />
-                                        <button class="user-auth-modal__main__input-icon">
-                                            <svg style="width: 30px;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><title>eye-off-outline</title><path d="M2,5.27L3.28,4L20,20.72L18.73,22L15.65,18.92C14.5,19.3 13.28,19.5 12,19.5C7,19.5 2.73,16.39 1,12C1.69,10.24 2.79,8.69 4.19,7.46L2,5.27M12,9A3,3 0 0,1 15,12C15,12.35 14.94,12.69 14.83,13L11,9.17C11.31,9.06 11.65,9 12,9M12,4.5C17,4.5 21.27,7.61 23,12C22.18,14.08 20.79,15.88 19,17.19L17.58,15.76C18.94,14.82 20.06,13.54 20.82,12C19.17,8.64 15.76,6.5 12,6.5C10.91,6.5 9.84,6.68 8.84,7L7.3,5.47C8.74,4.85 10.33,4.5 12,4.5M3.18,12C4.83,15.36 8.24,17.5 12,17.5C12.69,17.5 13.37,17.43 14,17.29L11.72,15C10.29,14.85 9.15,13.71 9,12.28L5.6,8.87C4.61,9.72 3.78,10.78 3.18,12Z" /></svg>
-                                        </button>
-                                    </div>
-                                </div>
-                                <span class="guide-msg">* 앞서 입력한 비밀번호와 동일하게 입력해주세요.</span>
-                            </div>
-                        </div>
-                        <div class="user-auth-modal__main__input-container__item">
-                            <div class="user-auth-modal__main__input-container__item-top">
-                                <div class="center" style="width: 100px;">
-                                    <button class="user-auth-modal__main__input__prev-btn">
-                                        <svg  style="width:30px;fill: rgb(255,255,255)" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><title>chevron-left</title><path d="M15.41,16.58L10.83,12L15.41,7.41L14,6L8,12L14,18L15.41,16.58Z" /></svg>
-                                    </button>
-                                </div>
-                                <span class="user-auth-modal__main__input-label" style="width: 150px;">계정 이미지</span>
-                                <div class="center" style="width: 100px;">
-                                    <button class="user-auth-modal__main__input__next-btn">
-                                        <svg style="width:30px;fill: rgb(255,255,255)" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><title>chevron-right</title><path d="M8.59,16.58L13.17,12L8.59,7.41L10,6L16,12L10,18L8.59,16.58Z" /></svg>
-                                    </button>
-                                </div>
-                            </div>
-                            <div style="display: flex;margin: 16px;">
-                                <label class="user-auth-modal__main__input-label">이미지</label>
-                                <label for="userAuthImage" class="user-auth-modal__main__file-label">Upload Image</label>
-                                <input class="vanish-style" type="file" id="userAuthImage" accept="image/*" />
-                            </div>
-                            <div class="user-auth-modal__main__file-preview">
-                                <img src="./assets/user-auth-default-img.png" alt="" />
-                            </div>
-                            <span class="guide-msg">* 이미지를 등록하지 않을 경우 기본 이미지(춘식이)로 등록됩니다.</span>
-                        </div>
-                        <div class="user-auth-modal__main__input-container__item">
-                            <div style="display:flex;">
-                                <div class="center" style="width: 100px;">
-                                    <button class="user-auth-modal__main__input__prev-btn">
-                                        <svg  style="width:30px;fill: rgb(255,255,255)" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><title>chevron-left</title><path d="M15.41,16.58L10.83,12L15.41,7.41L14,6L8,12L14,18L15.41,16.58Z" /></svg>
-                                    </button>
-                                </div>
-                                <div style="margin: 16px;">
-                                    <span class="user-auth-modal__main__input-label" style="width: 150px;">계정 정보 입력 확인</span>
-                                </div>
-                            </div>
-                            <div style="display: flex;margin: 16px;">
-                                <label class="user-auth-modal__main__input-label" for="userAuthNameRe">사용자명</label>
-                                <input class="user-auth-modal__main__input" disabled type="text" id="userAuthNameRe" />
-                            </div>
-                            <span class="user-auth-modal__main__input-label" style="width: 100px;margin: 16px;">사용자 이미지</span>
-                            <div class="user-auth-modal__main__file-preview" style="height: 150px;">
-                                <img src="./assets/user-auth-default-img.png" alt="" />
-                            </div>
-                            <div class="center" style="width: 100%;">
-                                <button class="user-auth-modal__main__submit-button">submit</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <span>⚠️ 이미 계정이 있으신 경우 <a href="login.html" class="user-auth-modal__main__locate_login_btn">로그인</a>을 눌러주세요.</span>
-            </div>
+      <div class="user-auth-modal__main">
+        <div class="user-auth-modal__main__logo-container">
+          <div>
+            <img src="./assets/window-xp-logo.png" alt="" />
+          </div>
+          <span>시작하려면 사용자를 생성하십시오.</span>
         </div>
+        <div class="center" style="flex-direction: column; width: 100%">
+          <div class="user-auth-modal__main__input-box">
+            <div class="user-auth-modal__main__input-container">
+              <div class="user-auth-modal__main__input-container__item">
+                <div class="user-auth-modal__main__input-container__item-top">
+                  <div class="center" style="width: 100px"></div>
+                  <span
+                    class="user-auth-modal__main__input-label"
+                    style="width: 150px"
+                    >계정 정보</span
+                  >
+                  <div class="center" style="width: 100px">
+                    <button class="user-auth-modal__main__input__next-btn">
+                      <svg
+                        style="width: 30px; fill: rgb(255, 255, 255)"
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 24 24"
+                      >
+                        <title>chevron-right</title>
+                        <path
+                          d="M8.59,16.58L13.17,12L8.59,7.41L10,6L16,12L10,18L8.59,16.58Z"
+                        />
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+                <div
+                  class="center"
+                  style="flex-direction: column; height: calc(100% - 50px)"
+                >
+                  <div style="display: flex; margin: 16px">
+                    <label
+                      class="user-auth-modal__main__input-label"
+                      for="userAuthName"
+                      >사용자명</label
+                    >
+                    <input
+                      class="user-auth-modal__main__input"
+                      type="text"
+                      id="userAuthName"
+                      maxlength="10"
+                    />
+                  </div>
+                  <span id="usernamemsg" class="guide-msg"
+                    >* 사용자명은 2자 이상 10자 이하이어야 합니다.</span
+                  >
+                  <div style="display: flex; margin: 16px">
+                    <label
+                      class="user-auth-modal__main__input-label"
+                      for="userAuthPw"
+                      >비밀번호</label
+                    >
+                    <div style="position: relative">
+                      <input
+                        class="user-auth-modal__main__input"
+                        type="password"
+                        id="userAuthPw"
+                      />
+                      <button class="user-auth-modal__main__input-icon">
+                        <svg
+                          style="width: 30px"
+                          xmlns="http://www.w3.org/2000/svg"
+                          viewBox="0 0 24 24"
+                        >
+                          <title>eye-off-outline</title>
+                          <path
+                            d="M2,5.27L3.28,4L20,20.72L18.73,22L15.65,18.92C14.5,19.3 13.28,19.5 12,19.5C7,19.5 2.73,16.39 1,12C1.69,10.24 2.79,8.69 4.19,7.46L2,5.27M12,9A3,3 0 0,1 15,12C15,12.35 14.94,12.69 14.83,13L11,9.17C11.31,9.06 11.65,9 12,9M12,4.5C17,4.5 21.27,7.61 23,12C22.18,14.08 20.79,15.88 19,17.19L17.58,15.76C18.94,14.82 20.06,13.54 20.82,12C19.17,8.64 15.76,6.5 12,6.5C10.91,6.5 9.84,6.68 8.84,7L7.3,5.47C8.74,4.85 10.33,4.5 12,4.5M3.18,12C4.83,15.36 8.24,17.5 12,17.5C12.69,17.5 13.37,17.43 14,17.29L11.72,15C10.29,14.85 9.15,13.71 9,12.28L5.6,8.87C4.61,9.72 3.78,10.78 3.18,12Z"
+                          />
+                        </svg>
+                      </button>
+                    </div>
+                  </div>
+                  <span
+                    id="passwordmsg"
+                    class="guide-password-msg"
+                    maxlength="16"
+                    >* 비밀번호는 8자 이상 16자이하, 영어 대소문자와 숫자를
+                    사용합니다.</span
+                  >
+                </div>
+              </div>
+              <div class="user-auth-modal__main__input-container__item">
+                <div class="user-auth-modal__main__input-container__item-top">
+                  <div class="center" style="width: 100px">
+                    <button class="user-auth-modal__main__input__prev-btn">
+                      <svg
+                        style="width: 30px; fill: rgb(255, 255, 255)"
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 24 24"
+                      >
+                        <title>chevron-left</title>
+                        <path
+                          d="M15.41,16.58L10.83,12L15.41,7.41L14,6L8,12L14,18L15.41,16.58Z"
+                        />
+                      </svg>
+                    </button>
+                  </div>
+                  <span
+                    class="user-auth-modal__main__input-label"
+                    style="width: 150px"
+                    >비밀번호 재확인</span
+                  >
+                  <div class="center" style="width: 100px">
+                    <button class="user-auth-modal__main__input__next-btn">
+                      <svg
+                        style="width: 30px; fill: rgb(255, 255, 255)"
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 24 24"
+                      >
+                        <title>chevron-right</title>
+                        <path
+                          d="M8.59,16.58L13.17,12L8.59,7.41L10,6L16,12L10,18L8.59,16.58Z"
+                        />
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+                <div
+                  class="center"
+                  style="flex-direction: column; height: calc(100% - 50px)"
+                >
+                  <div style="display: flex; margin: 16px">
+                    <label
+                      class="user-auth-modal__main__input-label"
+                      for="userAuthPwRe"
+                      >비밀번호</label
+                    >
+                    <div style="position: relative">
+                      <input
+                        class="user-auth-modal__main__input"
+                        type="password"
+                        id="userAuthPwRe"
+                      />
+                      <button class="user-auth-modal__main__input-icon">
+                        <svg
+                          style="width: 30px"
+                          xmlns="http://www.w3.org/2000/svg"
+                          viewBox="0 0 24 24"
+                        >
+                          <title>eye-off-outline</title>
+                          <path
+                            d="M2,5.27L3.28,4L20,20.72L18.73,22L15.65,18.92C14.5,19.3 13.28,19.5 12,19.5C7,19.5 2.73,16.39 1,12C1.69,10.24 2.79,8.69 4.19,7.46L2,5.27M12,9A3,3 0 0,1 15,12C15,12.35 14.94,12.69 14.83,13L11,9.17C11.31,9.06 11.65,9 12,9M12,4.5C17,4.5 21.27,7.61 23,12C22.18,14.08 20.79,15.88 19,17.19L17.58,15.76C18.94,14.82 20.06,13.54 20.82,12C19.17,8.64 15.76,6.5 12,6.5C10.91,6.5 9.84,6.68 8.84,7L7.3,5.47C8.74,4.85 10.33,4.5 12,4.5M3.18,12C4.83,15.36 8.24,17.5 12,17.5C12.69,17.5 13.37,17.43 14,17.29L11.72,15C10.29,14.85 9.15,13.71 9,12.28L5.6,8.87C4.61,9.72 3.78,10.78 3.18,12Z"
+                          />
+                        </svg>
+                      </button>
+                    </div>
+                  </div>
+                  <span class="guide-msg"
+                    >* 앞서 입력한 비밀번호와 동일하게 입력해주세요.</span
+                  >
+                </div>
+              </div>
+              <div class="user-auth-modal__main__input-container__item">
+                <div class="user-auth-modal__main__input-container__item-top">
+                  <div class="center" style="width: 100px">
+                    <button class="user-auth-modal__main__input__prev-btn">
+                      <svg
+                        style="width: 30px; fill: rgb(255, 255, 255)"
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 24 24"
+                      >
+                        <title>chevron-left</title>
+                        <path
+                          d="M15.41,16.58L10.83,12L15.41,7.41L14,6L8,12L14,18L15.41,16.58Z"
+                        />
+                      </svg>
+                    </button>
+                  </div>
+                  <span
+                    class="user-auth-modal__main__input-label"
+                    style="width: 150px"
+                    >계정 이미지</span
+                  >
+                  <div class="center" style="width: 100px">
+                    <button class="user-auth-modal__main__input__next-btn">
+                      <svg
+                        style="width: 30px; fill: rgb(255, 255, 255)"
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 24 24"
+                      >
+                        <title>chevron-right</title>
+                        <path
+                          d="M8.59,16.58L13.17,12L8.59,7.41L10,6L16,12L10,18L8.59,16.58Z"
+                        />
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+                <div style="display: flex; margin: 16px">
+                  <label class="user-auth-modal__main__input-label"
+                    >이미지</label
+                  >
+                  <label
+                    for="userAuthImage"
+                    class="user-auth-modal__main__file-label"
+                    >Upload Image</label
+                  >
+                  <input
+                    class="vanish-style"
+                    type="file"
+                    id="userAuthImage"
+                    accept="image/*"
+                  />
+                </div>
+                <div class="user-auth-modal__main__file-preview">
+                  <img src="./assets/user-auth-default-img.png" alt="" />
+                </div>
+                <span class="guide-msg"
+                  >* 이미지를 등록하지 않을 경우 기본 이미지(춘식이)로
+                  등록됩니다.</span
+                >
+              </div>
+              <div class="user-auth-modal__main__input-container__item">
+                <div style="display: flex">
+                  <div class="center" style="width: 100px">
+                    <button class="user-auth-modal__main__input__prev-btn">
+                      <svg
+                        style="width: 30px; fill: rgb(255, 255, 255)"
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 24 24"
+                      >
+                        <title>chevron-left</title>
+                        <path
+                          d="M15.41,16.58L10.83,12L15.41,7.41L14,6L8,12L14,18L15.41,16.58Z"
+                        />
+                      </svg>
+                    </button>
+                  </div>
+                  <div style="margin: 16px">
+                    <span
+                      class="user-auth-modal__main__input-label"
+                      style="width: 150px"
+                      >계정 정보 입력 확인</span
+                    >
+                  </div>
+                </div>
+                <div style="display: flex; margin: 16px">
+                  <label
+                    class="user-auth-modal__main__input-label"
+                    for="userAuthNameRe"
+                    >사용자명</label
+                  >
+                  <input
+                    class="user-auth-modal__main__input"
+                    disabled
+                    type="text"
+                    id="userAuthNameRe"
+                  />
+                </div>
+                <span
+                  class="user-auth-modal__main__input-label"
+                  style="width: 100px; margin: 16px"
+                  >사용자 이미지</span
+                >
+                <div
+                  class="user-auth-modal__main__file-preview"
+                  style="height: 150px"
+                >
+                  <img src="./assets/user-auth-default-img.png" alt="" />
+                </div>
+                <div class="center" style="width: 100%">
+                  <button class="user-auth-modal__main__submit-button">
+                    submit
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <span
+            >⚠️ 이미 계정이 있으신 경우
+            <a href="login.html" class="user-auth-modal__main__locate_login_btn"
+              >로그인</a
+            >을 눌러주세요.</span
+          >
+        </div>
+      </div>
     </section>
     <script src="./js/index.js"></script>
-</body>
+    <script src="./js/user-auth-modal.js"></script>
+  </body>
 </html>
